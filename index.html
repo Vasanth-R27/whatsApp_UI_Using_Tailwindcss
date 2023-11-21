@@ -4,16 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WhatsApp-UI-TailwindCSS</title>
+
+    <!-- css-link -->
     <link rel="stylesheet" href="./assets/css/output.css">
+
+    <!-- Whatsapp-icon-link -->
+    <link rel="shortcut icon" href="./assets/images/WhatsApp-icon.png" type="image">
+
 </head>
 
 <body class="bg-green-400 px-10">
-    <h1 class="text-black text-center font-bold py-5">WhatsApp UI</h1>
+    <h1 class="text-black text-center font-bold py-5">WhatsApp UI Challenge</h1>
 
     <section class="max-w-md mx-auto">
 
-        <div class="bg-green-800 px-5 py-5 flex items-center     justify-between">
+        <div class="bg-green-800 px-5 py-5 flex items-center justify-between">
             <h1 class="text-white font-bold">WhatsApp</h1>
             <div>
                 <div class="flex">
@@ -94,10 +100,23 @@
 
                 <div class="flex-1">
                     <h4 class="font-semibold">Me (You)</h4>
-                    <p class="text-gray-500 text-sm">cming monday your exams get starts</p>
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"
+                            class="text-blue-500 ">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                        <p class="text-gray-500 text-sm">cming monday your exams get starts</p>
+                    </div>
                 </div>
 
-
+                <div class="flex flex-col items-center space-y-0.5">
+                    <span class="text-gray-500 font-semibold">Today</span>
+                    <span><svg class="fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" viewBox="0 0 24 24">
+                            <path class="text-zinc-400 " d="m16 12l2 2v2h-5v6l-1 1l-1-1v-6H6v-2l2-2V5H7V3h10v2h-1v7Z" />
+                        </svg>
+                </div>
             </div>
 
             <!-- chat-2 -->
@@ -109,7 +128,7 @@
 
                 <div class="flex-1">
                     <h4 class="font-semibold">Appa</h4>
-                    <p class="text-gray-500 text-sm">were are u ?.its already 10 PM</p>
+                    <p class="text-gray-500 text-sm">were are u ?. its already 10 pm now</p>
                 </div>
 
                 <div class="flex flex-col items-center space-y-1">
@@ -150,10 +169,11 @@
                                 xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
                                 <path fill="currentColor"
                                     d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm0-2h14V5H5v14Zm1-2h12l-3.75-5l-3 4L9 13l-3 4Zm-1 2V5v14Zm3.5-9q.625 0 1.063-.438T10 8.5q0-.625-.438-1.063T8.5 7q-.625 0-1.063.438T7 8.5q0 .625.438 1.063T8.5 10Z" />
-                            </svg></span> </p>
+                            </svg>
+                        </span>
+                    </p>
                 </div>
 
-                <!-- chat-5 -->
                 <div class="flex flex-col items-center space-y-1">
                     <span class="text-emerald-600 font-semibold">08:21</span>
                     <span
@@ -162,7 +182,7 @@
             </div>
 
 
-            <!-- chat-6 -->
+            <!-- chat-5 -->
             <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
                 <div>
                     <img src="./assets/images/surya-img.jpg" alt="surya"
@@ -171,19 +191,34 @@
 
                 <div class="flex-1">
                     <h4 class="font-semibold">Surya</h4>
-                    <p class="text-gray-500 text-sm">Variya naliku practice ku ?</p>
+                    <div class="flex items-center gap-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 16 16"
+                            class="text-gray-500 ">
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5" d="m1.75 9.75l2.5 2.5m3.5-4l2.5-2.5m-4.5 4l2.5 2.5l6-6.5" />
+                        </svg>
+                        <p class="text-gray-500 text-sm">Variya naliku practice ku ?</p>
+                    </div>
                 </div>
-
-
             </div>
 
+
+            <!-- chat-6 -->
             <div class="flex space-x-4 items-center px-3 py-2 hover:cursor-pointer hover:bg-gray-200">
                 <div>
                     <img src="./assets/images/duolingo-logo.png" alt="Duolingo-img" class="w-16 rounded-full">
                 </div>
 
                 <div class="flex-1">
-                    <h4 class="font-semibold">Duolingo</h4>
+                    <div class="flex items-center gap-1">
+                        <h4 class="font-semibold">Duolingo</h4>
+                        <svg class="fill-current text-green-600" xmlns="http://www.w3.org/2000/svg" width="18"
+                            height="18" viewBox="0 0 24 24">
+                            <path
+                                d="M10.95 12.7L9.5 11.275Q9.225 11 8.812 11t-.712.3q-.275.275-.275.7t.275.7l2.15 2.15q.3.3.7.3t.7-.3l4.25-4.25q.3-.3.287-.7t-.287-.7q-.3-.3-.713-.312t-.712.287L10.95 12.7Zm-2.8 9.05L6.7 19.3l-2.75-.6q-.375-.075-.6-.388t-.175-.687L3.45 14.8l-1.875-2.15q-.25-.275-.25-.65t.25-.65L3.45 9.2l-.275-2.825q-.05-.375.175-.688t.6-.387l2.75-.6l1.45-2.45q.2-.325.55-.438t.7.038l2.6 1.1l2.6-1.1q.35-.15.7-.038t.55.438L17.3 4.7l2.75.6q.375.075.6.388t.175.687L20.55 9.2l1.875 2.15q.25.275.25.65t-.25.65L20.55 14.8l.275 2.825q.05.375-.175.688t-.6.387l-2.75.6l-1.45 2.45q-.2.325-.55.438t-.7-.038l-2.6-1.1l-2.6 1.1q-.35.15-.7.038t-.55-.438Z" />
+                        </svg>
+                    </div>
+
                     <p class="text-gray-500 text-sm">Hi Vasanth!
                         it's Duo!⏰Here is your request to reminder for your daily korean lesson.
                     </p>
@@ -226,7 +261,9 @@
                     <h4 class="font-semibold">Karthik</h4>
                     <p class="text-gray-500 text-sm">iru bro kovil ku poitu vare</p>
                 </div>
-
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-gray-500 font-semibold">01:20</span>
+                </div>
 
             </div>
 
@@ -257,7 +294,14 @@
 
                 <div class="flex-1">
                     <h4 class="font-semibold">Rakesk</h4>
-                    <p class="text-gray-500 text-sm">Missed voice call</p>
+                    <div class="flex items-center gap-2">
+                        <svg class="fill-current text-red-700" xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="m3.4 20.4l-2.3-2.25q-.3-.3-.3-.7t.3-.7q2.2-2.375 5.075-3.562T12 12q2.95 0 5.813 1.188T22.9 16.75q.3.3.3.7t-.3.7l-2.3 2.25q-.275.275-.638.3t-.662-.2l-2.9-2.2q-.2-.15-.3-.35t-.1-.45v-2.85q-.95-.3-1.95-.475T12 14q-1.05 0-2.05.175T8 14.65v2.85q0 .25-.1.45t-.3.35l-2.9 2.2q-.3.225-.663.2t-.637-.3ZM6 15.35q-.725.375-1.4.863T3.2 17.3l1 1L6 16.9v-1.55Zm12 .05v1.5l1.8 1.4l1-.95q-.725-.65-1.4-1.125T18 15.4Zm-12-.05Zm12 .05ZM6 9q-.425 0-.713-.288T5 8V4q0-.425.288-.713T6 3h4q.425 0 .713.288T11 4q0 .425-.288.713T10 5H8.4l3.525 3.525l4.95-4.95q.3-.3.713-.3t.712.3q.3.3.3.713T18.3 5l-4.925 4.925q-.575.575-1.425.575t-1.425-.575L7 6.4V8q0 .425-.288.713T6 9Z" />
+                        </svg>
+                        <p class="text-gray-500 text-sm"> Missed voice call</p>
+                    </div>
                 </div>
 
                 <div class="flex flex-col items-center space-y-1">
@@ -283,10 +327,7 @@
                             </svg></span></p>
                 </div>
             </div>
-
-
         </div>
-
     </section>
 
 
